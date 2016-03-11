@@ -5,20 +5,20 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(../../lib/font/league-gothic/league-gothic.css);
+/*@import url(../../lib/font/league-gothic/league-gothic.css);*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #000033;
-  background: -moz-radial-gradient(center, circle cover, #33ccff 0%, #000033 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #33ccff), color-stop(100%, #000033));
-  background: -webkit-radial-gradient(center, circle cover, #33ccff 0%, #000033 100%);
-  background: -o-radial-gradient(center, circle cover, #33ccff 0%, #000033 100%);
-  background: -ms-radial-gradient(center, circle cover, #33ccff 0%, #000033 100%);
-  background: radial-gradient(center, circle cover, #33ccff 0%, #000033 100%);
-  background-color: #000033; }
+  background: #1a0000;
+  background: -moz-radial-gradient(center, circle cover, #ff6666 0%, #1a0000 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ff6666), color-stop(100%, #1a0000));
+  background: -webkit-radial-gradient(center, circle cover, #ff6666 0%, #1a0000 100%);
+  background: -o-radial-gradient(center, circle cover, #ff6666 0%, #1a0000 100%);
+  background: -ms-radial-gradient(center, circle cover, #ff6666 0%, #1a0000 100%);
+  background: radial-gradient(center, circle cover, #ff6666 0%, #1a0000 100%);
+  background-color: #1a0000; }
 
 .reveal {
   font-family: "Lato", sans-serif;
@@ -28,7 +28,7 @@ body {
 
 ::selection {
   color: #fff;
-  background: #FF5E99;
+  background: #ffd633;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -46,15 +46,15 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
+  color: #ffdb4d;
   font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
   /*font-family: "League Gothic", Impact, sans-serif;*/
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
   /*text-transform: uppercase;*/
-  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-  word-wrap: break-word; }
+  text-shadow: 0px 0px 4px rgba(128, 85, 0, 0.2);
+  word-wrap: break-word;}
 
 .reveal h1 {
   font-size: 3.77em; }
@@ -69,7 +69,7 @@ body {
   font-size: 1em; }
 
 .reveal h1 {
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }
+  text-shadow: 0 1px 0 #ffd633, 0 2px 0 #ffd11a, 0 3px 0 #ffcc00, 0 4px 0 #e6b800, 0 5px 0 #cca300, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }
 
 /*********************************************
  * OTHER
@@ -211,20 +211,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #13DAEC;
+  color: #ffdb4d;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
 .reveal a:hover {
-  color: #71e9f4;
+  color: #ffeb99;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #0d99a5; }
+  background: #ffdb4d; }
 
 /*********************************************
  * IMAGES
@@ -254,31 +254,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #13DAEC; }
+  border-right-color: #ffd633; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #13DAEC; }
+  border-left-color: #ffd633; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #13DAEC; }
+  border-bottom-color: #ffd633; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #13DAEC; }
+  border-top-color: #ffd633; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #71e9f4; }
+  border-right-color: #ffe066; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #71e9f4; }
+  border-left-color: #ffe066; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #71e9f4; }
+  border-bottom-color: #ffe066; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #71e9f4; }
+  border-top-color: #ffe066; }
 
 /*********************************************
  * PROGRESS BAR
