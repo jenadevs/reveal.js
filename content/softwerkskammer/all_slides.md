@@ -13,9 +13,10 @@ ignaz_semmelweis.jpg
 
 Notiz: "Semmelweis führte unterschiedlich häufiges Auftreten von Kindbettfieber auf mangelnde Hygiene bei Ärzten und Krankenhauspersonal zurück und bemühte sich, Hygienevorschriften einzuführen. Seine Studie von 1847/48 gilt heute als erster praktischer Fall von evidenzbasierter Medizin (auf empirische Belege gestützte Heilkunde) in Österreich und als Musterbeispiel für eine methodisch korrekte Überprüfung wissenschaftlicher Hypothesen. Zu seinen Lebzeiten wurden seine Erkenntnisse nicht anerkannt und von Kollegen als „spekulativer Unfug“ abgelehnt. Nur wenige Ärzte unterstützten ihn, da Hygiene als Zeitverschwendung und unvereinbar mit den damals geltenden Theorien über Krankheitsursachen angesehen wurde." <https://de.wikipedia.org/wiki/Ignaz_Semmelweis>
 
-marry - poppendieck.jpg
+marry_poppendieck.jpg
+tom_poppendieck.jpg
 
-"The difference between practise and theory is practice!" - Mary and Tom Poppendieck (Lean Midest, Lean Software Development, Principles)
+"The difference between practise and theory is practice!" - Mary and Tom Poppendieck (Lean Mindest, Lean Software Development Books and Principles)
 
 ---
 
@@ -93,9 +94,10 @@ softwerkskammer_map.jpg
 Today: Foundation of Softwerkskammer Jena
 
 - Jena Developers Meetup: 
--- Talks, Workshops, Coding Dojo with Katas.
+-- Presentations, Workshops, Coding Dojos with Katas.
 
 - Agile Jena Meetup
+-- Talks, Workshops, Experience Sharing.
 
 ---
 
