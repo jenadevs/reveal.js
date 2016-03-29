@@ -48,6 +48,15 @@ The local communities use it to organise their meetings and other events like Co
 
 ----
 
+# SoCraTes
+
+many_imgs_from_my_photolib
+imgs_form_twitter
+
+Notiz: war letztes jahr zum dritten mal dort, erste idee auch lokale gruppe zu gründen.
+
+----
+
 # Historie: Zeitstrahl
 
 2011: 
