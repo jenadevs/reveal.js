@@ -70,16 +70,22 @@ SoCraTes 2012:
 
 2013:
 
-* SoCraTes 2013: D, UK.
+* 3th SoCraTes
+* 1th SoCraTes UK
 
 2014:
 
-* SoCraTes 2014: Umzug in eine größere Konferenzstätte, 200 TN.
+* 4th SoCraTes: Umzug in eine größere Konferenzstätte, 200 TN.
 
 2015:
 
-* SoCraTes 2015: ES, CH, FR, BE, UK.
+* 5th SoCraTes: 250 TN. 
+* SoCraTes also in ES, CH, FR, BE, UK.
 * 18 Regionalgruppen
+
+2016:
+
+* 6th SoCraTes 2016: D, 25-28 August 2016.
 
 ---- 
 
@@ -143,4 +149,7 @@ Books
 Offtopic
 
 Guilds may have been a necessary evil in medieval Europe but Software Craftsmanship is not about bringing them back. The Software Craftsmanship movement is at least partly about finding ways to include more people in software development. We focus heavily on ideas like apprenticeship, sharing knowledge and deliberate practice rather than on ways to enrich a small coterie of self-proclaimed 'masters'.
+
+* SoCraTes 2016 - 6th International Software Craftsmanship and Testing Conference in Germany
+25 - 28 August 2016, Soltau, Germany: https://www.socrates-conference.de/
 
