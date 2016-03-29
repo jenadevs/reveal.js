@@ -1,11 +1,11 @@
 
-# Jena Developers Meetup (SWK Jena)
+# Jena Developers Meetup
 
 ### Software Craftsmanship Community
 
 ---
 
-# Origin: Theory and Pracitce
+# Origin: Theory and Practices
 
 ignaz_semmelweis.jpg
 
@@ -13,7 +13,9 @@ ignaz_semmelweis.jpg
 
 Notiz: "Semmelweis führte unterschiedlich häufiges Auftreten von Kindbettfieber auf mangelnde Hygiene bei Ärzten und Krankenhauspersonal zurück und bemühte sich, Hygienevorschriften einzuführen. Seine Studie von 1847/48 gilt heute als erster praktischer Fall von evidenzbasierter Medizin (auf empirische Belege gestützte Heilkunde) in Österreich und als Musterbeispiel für eine methodisch korrekte Überprüfung wissenschaftlicher Hypothesen. Zu seinen Lebzeiten wurden seine Erkenntnisse nicht anerkannt und von Kollegen als „spekulativer Unfug“ abgelehnt. Nur wenige Ärzte unterstützten ihn, da Hygiene als Zeitverschwendung und unvereinbar mit den damals geltenden Theorien über Krankheitsursachen angesehen wurde." <https://de.wikipedia.org/wiki/Ignaz_Semmelweis>
 
-"The difference between practise and theory is practice!" - Mary Poppendieck (Lean Midest, Lean Software Development, Principles)
+marry - poppendieck.jpg
+
+"The difference between practise and theory is practice!" - Mary and Tom Poppendieck (Lean Midest, Lean Software Development, Principles)
 
 ---
 
@@ -99,10 +101,13 @@ Today: Foundation of Softwerkskammer Jena
 
 Contact
 
-<https://www.meetup.com/jenadevs>
-<https://twitter.com/jenadevs>
-
+<http://softwerkskammer.org>
 <https://www.softwerkskammer.org/groups/jena>
+
+<http://softwarecraftsmanship.slack.com> Channel: #jena
+
+<https://www.meetup.com/jenadevs>
+<https://twitter.com/jenadevs> Hashtags: #jenadevs, #softwerkskammer.
 
 Organizers
 
@@ -115,7 +120,6 @@ Sources
 
 Web
 
-<http://softwerkskammer.org>
 <http://manifesto.softwarecraftsmanship.org/#/en/reading>
 
 Blog

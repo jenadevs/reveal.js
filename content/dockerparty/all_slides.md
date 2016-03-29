@@ -4,10 +4,14 @@
 
 # What is a container?
 
+-
+-
+-
+-
+
 ---
 
 # What is docker?
-
 
 - Docker Machine etc.
 
@@ -16,10 +20,12 @@
 # Dockerfile
 
 -
+-
+-
 
 ----
 
-Best Practises
+Best Practices
 
 -
 -
@@ -29,22 +35,31 @@ Best Practises
 
 Docker Hub and Rigistry
 
-
+-
+-
+-
 
 ----
 
 Docker Compose
 
+-
+-
+-
 
 ---
 
 Swarm
 
+-
+-
+-
 
 ----
 
 CircleCi tests
 
+-
 -
 -
 
@@ -56,6 +71,12 @@ owncloud, ampache
 birthday party app
 vpn
 elasticsearch
+
+----
+
+Sources
+
+- http://codurance.com/2016/03/16/Containers-all-the-way-through/
 
 ----
 
