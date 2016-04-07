@@ -61,124 +61,16 @@
 					<section>
 						<h2>Vagrant Core OS - Windows</h2>
 						<ol>
-							<li>Power Shell 3.0 - <a href="https://www.microsoft.com/en-us/download/details.aspx?id=34595">Download</a></li>
+							<li>Power Shell 3.0 - <a href="https://www.microsoft.com/en-us/download/details.aspx?id=34595">Windows Management Framework 3.0</a></li>
 							<li>cygwin - <a href="https://cygwin.com/install.html">Download</a></li>
 							<li>VirtualBox - <a href="https://www.virtualbox.org/wiki/Downloads">Download</a></li>
 							<li>Vagrant - <a href="https://www.vagrantup.com/downloads.html">Download</a></li>
 							<li>git - <a href="https://git-scm.com/downloads">Download</a></li>
+							
 						</ol>
 					</section>
 					<section>
-						<p>cygwin installation</p>
-						<ul>
-							<li>make sure to activate “rsync” and “SSH” in the installation</li>
-							<li>add “C:\cygwin64\bin” to your Windows system variable “PATH”</li>
-						</ul>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>Vagrant Core OS - Linux</h2>
-						<p>install git</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ yum install git
-						</code></pre>
-						<p class="fragment">Install openssl-devel and openssl-devel</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ yum install openssl-devel openssl
-						</code></pre>
-						<p class="fragment">Install nano</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ yum install nano
-						</code></pre>
-					</section>
-					<section>
-						<p class="fragment">Install Vagrant</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ cd
-$ mkdir downloads
-$ cd downloads
-$ cd wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.rpm
-$ rpm -Uvh vagrant_1.7.4_x86_64.rpm
-						</code></pre>
-						<p class="fragment">Install VirtualBox</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ vim /etc/yum.repos.d/virtualbox.repo
-						</code></pre>
-					</section>
-					<section>
-						<p class="fragment">insert following text</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-[virtualbox]
-name=Oracle Linux / RHEL / CentOS-$relesever / $basearch - VirtualBox
-baseurl=http://download.virtualbox.org/virtualbox/rpm/el/$releasever/$basearch
-enabled=1
-gpgcheck=1
-gpgkey=http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc
-						</code></pre>
-						<p class="fragment">save and exit vim</p>
-					</section>
-					<section>
-						<p class="fragment">execute</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ rpm -Uvh http://ftp.joist.ac.jp/pub/Linux/Fedora/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
-$ yum install gcc make patch dkms qt libgomp
-$ yum install kernel-headers kernel-devel fontforge binutils glibc-headers glibc-devel
-$ export KERN_DIR=/usr/src/kernels/2.6.32-504.3.3.el6.x86_64
-$ yum install VirtualBox-5.0
-$ service vboxdrv setup
-						</code></pre>
-					</section>
-				</section>
-				
-				<section>
-					<section>
-						<h2>Getting started</h2>
-						<p>clone CoreOs-Vagrant repo (win Git Bash)</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ git clone https://github.com/coreos/coreos-vagrant.git
-$ cd coreos-vagrant
-						</code></pre>
-					</section>
-					<section>
-						<p>cluster configuration</p>
-						<ul>
-							<li>get discovery token from <a href="https://discovery.etcd.io/new">https://discovery.etcd.io/new</a></li>
-							<li>Edit the file user-data</li>
-						</ul>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-etcd2:
-  discovery: https://discovery.etcd.io/NEW_TOKEN
-						</code></pre>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-etcd2:
-  discovery: https://discovery.etcd.io/0850c01e29cb6d7dcd5d4e9123311704
-						</code></pre>
-					</section>
-					<section>
-						<p>start cluster (use Power Shell 3 on Windows)</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ cd .\git-projects-github\coreos-vagrant
-$ vagrant up
-						</code></pre>
-						<p class="fragment">if everything works fine, 3 coreos nodes will pop up</p>
-					</section>
-					<section>
-						<p class="fragment">stop cluster</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ vagrant halt
-						</code></pre>
-						<p class="fragment">destroy cluster</p>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ vagrant destroy
-						</code></pre>
-					</section>
-				</section>
-				
-				
-				<section>
-					<section>
-						<p>customizations</p>
+						<p>start 3 maschine coreos cluster</p>
 						<pre class="fragment"><code class="hljs" data-trim contenteditable>
 $ vagrant up
 						</code></pre>
@@ -190,6 +82,29 @@ $ vagrant ssh core-01 -- -A
 						<pre class="fragment"><code class="hljs" data-trim contenteditable>
 $ cd /home/core/jena-devs/meetup_1
 						</code></pre>
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<p>start 3 maschine coreos cluster</p>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+$ vagrant up
+						</code></pre>
+						<p class="fragment">login into 1st coreos node</p>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+$ vagrant ssh core-01 -- -A
+						</code></pre>
+						<p class="fragment">find shared sources here</p>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+$ cd /home/core/jena-devs/meetup_1
+						</code></pre>
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -565,7 +480,7 @@ Reveal.addEventListener( 'customevent', function() {
 						- <a href="http://slides.com">Try the online editor</a> <br>
 						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
 					</p>
-				</section>  
+				</section>
 
 			</div>
 
