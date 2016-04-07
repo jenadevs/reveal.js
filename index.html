@@ -51,8 +51,6 @@
 				<section>
 					<h2>Info</h2>
 					<ul>
-						<li>initial repo <a href="https://github.com/coreos/coreos-vagrant">https://github.com/coreos/coreos-vagrant</a></li>
-						<li>final repo <a href="https://github.com/jenadevs/coreos-vagrant">https://github.com/jenadevs/coreos-vagrant</a></li>
 						<li>helpful article <a href="https://developer.epages.com/blog/2016/01/19/setup-a-coreos-cluster.html#install-vagrant">Setting up a CoreOS Cluster just for fun on Windows and CentOS</a></li>
 					</ul>
 				</section>
@@ -222,7 +220,34 @@ $ docker inspect {your_docker_image_id}
 						</code></pre>
 						<p class="fragment">check connection to elastic search</p>
 						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ curl '{your_docker_container_id}:9200/_cat/health?v'
+$ curl '{your_docker_container_IP}:9200/_cat/health?v'
+						</code></pre>
+					</section>
+					<section>
+						<p class="fragment">show elastic search nodes</p>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+$ curl '{your_docker_container_IP}:9200/_cat/nodes?v'
+						</code></pre>
+						<p class="fragment">show elastic search indices</p>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+$ curl '{your_docker_container_IP}:9200/_cat/indices?v'
+						</code></pre>
+						<p class="fragment">add elastic search index</p>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+$ curl -XPUT '{your_docker_container_IP}:9200/meetup_participant?pretty'
+						</code></pre>
+					</section>
+					<section>
+						<p class="fragment">post data</p>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+$ curl -XPOST '{your_docker_container_IP}:9200/meetup_participant/external?pretty' -d '{
+"name":{"first_name":"John","last_name":"Doe"},
+"id":3
+}'
+						</code></pre>
+						<p class="fragment">get data</p>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+$ curl '{your_docker_container_IP}:9200/meetup_participant/_search?q=*&pretty'
 						</code></pre>
 					</section>
 				</section>
@@ -230,46 +255,27 @@ $ curl '{your_docker_container_id}:9200/_cat/health?v'
 				
 				<section>
 					<h2>Exercise</h2>
-					<p class="fragment">make ip and port accessable outsite the container and host os</p>
-					<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ vagrant ssh core-01 -- -A
-					</code></pre>
-					<p class="fragment">start elastic search container on core os</p>
-					<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ docker run -d elasticsearch
-					</code></pre>
-					<p class="fragment">show docker containers</p>
-					<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ docker ps
-					</code></pre>
-				</section>
-				<section>
-					<p class="fragment">show docker container information</p>
-					<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ docker inspect {your_docker_image_id}
-					</code></pre>
-					<p class="fragment">check connection to elastic search</p>
-					<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ curl '{your_docker_container_id}:9200/_cat/health?v'
-					</code></pre>
+					<p class="fragment">make ip and port accessable to host os</p>
+					<p class="fragment">check if its possible to switch ssh key authentification </p>
 				</section>
 				
 				<section>
 					<h2>Much more</h2>
 					<ul>
 						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+						<li><a href="https://github.com/coreos/coreos-vagrant">initial repo</a></li>
+						<li><a href="https://github.com/jenadevs/coreos-vagrant">final repo</a></li>
+						<li><a href="https://coreos.com/">Core OS</a></li>
 					</ul>
 				</section>
 
 				<section style="text-align: left;">
 					<h1>THE END</h1>
 					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+						- <a href="https://github.com/jenadevs/coreos-vagrant/tree/meetup_1_practice">Meetup Practice Repo</a> <br>
+						- <a href="http://www.meetup.com/de-DE/jenadevs/">Meetup Group</a>
+						- <a href="https://twitter.com/jenadevs">Twitter</a>
+						- <a href="https://www.softwerkskammer.org/">Softwerkskammer</a>
 					</p>
 				</section>  
 
