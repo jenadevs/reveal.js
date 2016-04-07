@@ -49,11 +49,10 @@
 				</section>
 
 				<section>
-					<h2>prerequisits</h2>
+					<h2>Info</h2>
 					<ul>
-						<li>make sure you are able to start a coreos cluster</li>
-						<li>use repo <a href="https://github.com/jenadevs/coreos-vagrant">https://github.com/jenadevs/coreos-vagrant</a></li>
-						<li>follow this article <a href="https://developer.epages.com/blog/2016/01/19/setup-a-coreos-cluster.html#install-vagrant">Setting up a CoreOS Cluster just for fun on Windows and CentOS</a></li>
+						<li>initial repo<a href="https://github.com/jenadevs/coreos-vagrant">https://github.com/jenadevs/coreos-vagrant</a></li>
+						<li>helpful article <a href="https://developer.epages.com/blog/2016/01/19/setup-a-coreos-cluster.html#install-vagrant">Setting up a CoreOS Cluster just for fun on Windows and CentOS</a></li>
 					</ul>
 				</section>
 				
@@ -93,7 +92,7 @@ $ yum install nano
 						</code></pre>
 					</section>
 					<section>
-						<p class="fragment">Install Vagrant</p>
+						<p>Install Vagrant</p>
 						<pre class="fragment"><code class="hljs" data-trim contenteditable>
 $ cd
 $ mkdir downloads
@@ -107,7 +106,7 @@ $ vim /etc/yum.repos.d/virtualbox.repo
 						</code></pre>
 					</section>
 					<section>
-						<p class="fragment">insert following text</p>
+						<p>insert following text</p>
 						<pre class="fragment"><code class="hljs" data-trim contenteditable>
 [virtualbox]
 name=Oracle Linux / RHEL / CentOS-$relesever / $basearch - VirtualBox
@@ -119,7 +118,7 @@ gpgkey=http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc
 						<p class="fragment">save and exit vim</p>
 					</section>
 					<section>
-						<p class="fragment">execute</p>
+						<p>install packages</p>
 						<pre class="fragment"><code class="hljs" data-trim contenteditable>
 $ rpm -Uvh http://ftp.joist.ac.jp/pub/Linux/Fedora/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
 $ yum install gcc make patch dkms qt libgomp
