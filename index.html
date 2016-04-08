@@ -214,9 +214,11 @@ $ docker ps
 						</code></pre>
 					</section>
 					<section>
-						<p class="fragment">show docker container information</p>
+						<p class="fragment">show docker container IP</p>
 						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ docker inspect {your_docker_image_id}
+$ docker inspect \
+    -f '{{.NetworkSettings.Networks.bridge.IPAddress}}' \
+    {your_docker_container_id/_container_name}
 						</code></pre>
 						<p class="fragment">check connection to elastic search</p>
 						<pre class="fragment"><code class="hljs" data-trim contenteditable>
